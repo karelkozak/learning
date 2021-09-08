@@ -16,15 +16,25 @@
     <header>
         <a href="#" class="logo">logo</a>
         <nav>
-            <ul class="navbar">
+            <ul class="navbar navbar-primary collapsed">
                 <li>Portfolio</li>
                 <li>About</li>
                 <li>Contact</li>
             </ul>
         </nav>
         <a href="#" class="cta"><button>Contact</button></a>
-        <img src="images/menu.svg" class="menu" alt="menu">
+        <button type="button" class="btn menu" id="menu-button">
+            <img src="images/menu.svg" alt="menu">
+        </button>        
     </header>
+
+    <script>
+        const menuButton = document.getElementById('menu-button')
+        const navbar = document.getElementsByClassName('navbar-primary')[0]
+        menuButton.addEventListener('click', function(event) {
+            navbar.classList.toggle('collapsed')
+        })
+    </script>
 </body>
 
 </html>
