@@ -1,11 +1,8 @@
-* {
+body {
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #404040;
-}
-
-body {
-    font-family: 'Roboto', sans-serif;
 }
 
 li, a, button
@@ -39,10 +36,15 @@ header {
     color:rgb(0,136,136)
 }
 
+.navbar {
+    margin: 0;
+}
+
 .navbar li {
     background-color: #303030;
     list-style: none;
-    display: inline-block;
+    display: block;
+    float: left;
     padding: 0px 24px;
     cursor: pointer;
 }
@@ -72,21 +74,33 @@ button:hover {
 }
 
 .menu:hover{
-    color:rgb(0,136,136):
+    color:rgb(0,136,136);
 }
 
 @media (max-width:768px){
 
-    .menu{
+    .menu, .menu:active, .menu:hover{        
+        padding: 0;
         display:flex;
+        background: none;
+        position: relative;
     }
 
-    .navbar{
-     display: none;
+    .menu>img {
+        position: absolute;
+        width:32px;
+        height: 32px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
     }
 
-button{
-    display:none;
-}
+    .navbar.collapsed{
+        display: none;
+    }
+
+    .cta {
+        display:none;
+    }
 
 }
