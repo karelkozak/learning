@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responzive gallery</title>
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"/>
+
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <a href="main.html" class="logo">karelkozak</a>
+        <nav>
+            <ul class="navbar navbar-primary collapsed">
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <a href="#" class="cta"><button>Contact</button></a>
+        <button type="button" class="btn menu" id="menu-button">
+            <img src="images/menu.svg" alt="menu">
+        </button>        
+    </header>
+
+    <div class="info">
+        <h1>About</h1>
+    </div>
+
+    <section class="twoblocks">
+    <div class="blocks">
+        <div class="item">
+            <h3>Info</h3>
+            <p>Oprávněné aniž i odstoupil o snadno osoby vede grafikou osobami úmyslu 60 % poskytovat, dělí způsobem, § 36 veletrhu pověřit spravují zřejmém,
+                k před platbě státu zvláštních tuzemsku. Dohodnou zvláštní provádí o nebezpečí kódech § 6 příjmu vhodným třetím, škody uspořádaných svůj rozmnožovat souhrnně.
+                Nepoužije je případy dnem oprávnění jinou, vklad po vede předvedením neoprávněný poslední témuž šíří lidové z koláž újmy strpět funkčního zaznamená všem nenabude,
+                mezi namísto plnění § 93 i udělil vedeném vznik vůle delší.</p>
+                <br>
+                <p>Oprávněné aniž i odstoupil o snadno osoby vede grafikou osobami úmyslu 60 % poskytovat, dělí způsobem, § 36 veletrhu pověřit spravují zřejmém,
+                    k před platbě státu zvláštních tuzemsku. Dohodnou zvláštní provádí o nebezpečí kódech § 6 příjmu vhodným třetím, škody uspořádaných svůj rozmnožovat souhrnně.
+                    Nepoužije je případy dnem oprávnění jinou, vklad po vede předvedením neoprávněný poslední témuž šíří lidové z koláž újmy strpět funkčního zaznamená všem nenabude,
+                    mezi namísto plnění § 93 i udělil vedeném vznik vůle delší.</p>
+        </div>
+        <div class="item">
+            <div class="image">
+            <img src="/Gallery/images/1.jpg" alt="">
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script>
+    Fancybox.bind("[data-fancybox]", {
+      });
+    </script>
+    <script>
+            const menuButton = document.getElementById('menu-button')
+            const navbar = document.getElementsByClassName('navbar-primary')[0]
+            menuButton.addEventListener('click', function(event) {
+                navbar.classList.toggle('collapsed')
+            })
+    </script>
+</body>
+</html>
