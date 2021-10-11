@@ -101,17 +101,19 @@ h1{
     flex:1;
 }
 
-.image{
-    display:inline-block;
-    margin-bottom: 10px;
+img{
+    max-width: 25%;
     overflow: hidden;
+    padding: 16px;
+    margin: 16px;
+    transition: 0.5s ease-in-out;
 }
 
-img{
-    display: inline-block;
-    width: 100%;
-    height: auto;
-    transition: 0.5s ease-in-out;
+.photos>div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: stretch;
 }
 
 img:hover{
@@ -147,20 +149,12 @@ input[type=text], select, textarea {
     margin: 5px;
   }
 
-
-
-
-
 @media (max-width:1024px){
-    .container {
-        column-count: 4;
-    }
+
 }
 
 @media (max-width:768px){
-    .container {
-        column-count: 3;
-    }
+
     .menu, .menu:active, .menu:hover{        
         padding: 0;
         display:flex;
@@ -181,12 +175,10 @@ input[type=text], select, textarea {
         display: none;
     }
 
-
     .container{
-        position: relative;
-        column-count: 1;
-        padding: 0px;
+        flex-direction: column;
     }
+
 }
 
 @media (max-width:425px){
