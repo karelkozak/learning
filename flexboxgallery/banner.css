@@ -1,11 +1,16 @@
 * {
-    font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
 }
 
 html, body {
+    font-family: 'Montserrat', sans-serif;
     margin: 0px;
     padding: 0px;
+}
+
+p, h2 {
+    margin: 0;
+    padding: 0;
 }
 
 .banner{
@@ -43,17 +48,13 @@ h1 {
     margin: 24px;
 }
 
-.itemtitle:hover{
+.item:hover > .itemtitle, .item:hover > .itemtext, .item:hover > svg{
     cursor: pointer;
-    color: coral;
-}
-
-.itemtext:hover{
-    cursor: pointer;
-    color: coral;
+    color: blue;
+    fill: blue;
 }
 
 .item:hover{
     cursor: pointer;
-    border-color:coral;
+    border-color: blue;
 }
